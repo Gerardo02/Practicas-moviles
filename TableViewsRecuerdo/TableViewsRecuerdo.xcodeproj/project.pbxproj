@@ -15,7 +15,6 @@
 		3DE141D4279B729300117D06 /* CellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE141D3279B729300117D06 /* CellController.swift */; };
 		3DE141DA279B7CC400117D06 /* Variantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE141D9279B7CC400117D06 /* Variantes.swift */; };
 		3DE141DE279B95C100117D06 /* DetallesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE141DD279B95C100117D06 /* DetallesController.swift */; };
-		3DE141E0279B9F3F00117D06 /* datos.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3DE141DF279B9F3F00117D06 /* datos.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +28,6 @@
 		3DE141D3279B729300117D06 /* CellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellController.swift; sourceTree = "<group>"; };
 		3DE141D9279B7CC400117D06 /* Variantes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variantes.swift; sourceTree = "<group>"; };
 		3DE141DD279B95C100117D06 /* DetallesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesController.swift; sourceTree = "<group>"; };
-		3DE141DF279B9F3F00117D06 /* datos.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = datos.csv; path = ../../datos.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +69,6 @@
 				3DE141D3279B729300117D06 /* CellController.swift */,
 				3DE141D9279B7CC400117D06 /* Variantes.swift */,
 				3DE141DD279B95C100117D06 /* DetallesController.swift */,
-				3DE141DF279B9F3F00117D06 /* datos.csv */,
 			);
 			path = TableViewsRecuerdo;
 			sourceTree = "<group>";
@@ -136,7 +133,6 @@
 			files = (
 				3DE141CC279B6C6C00117D06 /* LaunchScreen.storyboard in Resources */,
 				3DE141C9279B6C6C00117D06 /* Assets.xcassets in Resources */,
-				3DE141E0279B9F3F00117D06 /* datos.csv in Resources */,
 				3DE141C7279B6C2800117D06 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

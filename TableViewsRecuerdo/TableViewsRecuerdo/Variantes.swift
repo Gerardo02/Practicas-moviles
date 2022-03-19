@@ -7,21 +7,21 @@
 //
 
 import Foundation
-class Variantes {
-    var lineage : String
-    var date : String
-    var designated : String
-    var asignated : String
-    var name : String
-    var descripcion : String 
+class Variantes : Decodable {
+    var lineage : String?
+    var earliest_date : String?
+    var designated_number : String?
+    var assigned_number : String?
+    var who_name : String?
+    var description : String?
     
-    init(_ lineage: String, _ date: String, _ designated: String, _ asignated: String, _ descripcion: String, _ name: String){
+    /*init(_ lineage: String, _ date: String, _ designated: String, _ asignated: String, _ descripcion: String, _ name: String){
         self.lineage = lineage
-        self.date = date
-        self.designated = designated
-        self.asignated = asignated
-        self.name = name
+        self.earliest_date = date
+        self.designated_number = designated
+        self.assigned_number = asignated
+        self.who_name = name
         
-        self.descripcion = descripcion
-    }
+        self.description = descripcion
+    }*/
 }

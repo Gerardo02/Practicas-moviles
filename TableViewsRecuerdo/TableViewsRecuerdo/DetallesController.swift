@@ -22,15 +22,15 @@ class DetallesController : UIViewController{
     var variantes : Variantes?
     
     override func viewDidLoad() {
-        lblDescripcion.text = variantes!.descripcion
+        lblDescripcion.text = variantes!.description
         
         self.title = variantes!.lineage
         
-        lblDetallesDate.text = variantes!.date
+        lblDetallesDate.text = variantes!.earliest_date
         lblDetallesLineage.text = variantes!.lineage
-        lblDetallesName.text = variantes!.name
-        lblDetallesAsigned.text = variantes!.asignated
-        lblDetallesDesignated.text = variantes!.designated
+        lblDetallesName.text = variantes!.who_name
+        lblDetallesAsigned.text = variantes!.assigned_number
+        lblDetallesDesignated.text = variantes!.designated_number
         
         
         

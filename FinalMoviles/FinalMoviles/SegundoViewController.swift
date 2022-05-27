@@ -13,7 +13,9 @@ class SegundoViewController : UIViewController {
     @IBOutlet weak var marcaCarro: UITextField!
     @IBOutlet weak var colorCarro: UITextField!
     @IBOutlet weak var tipoCarro: UITextField!
+    @IBOutlet weak var yearCarro: UITextField!
     @IBOutlet weak var buttonParaDatos: UIView!
+    
     
     
     let marca = ["Toyota", "Volkswagen", "Nissan", "Mazda", "Honda"]
@@ -24,10 +26,17 @@ class SegundoViewController : UIViewController {
     var colorPickerView = UIPickerView()
     var tipoPickerView = UIPickerView()
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destino = segue.destination as! TercerViewController
-        destino.callbackVolver = volverAlPrimero
-    }
+    var marcaDato = ""
+    var colorDato = ""
+    var tipoDato = ""
+    var yearDato = ""
+    
+    var callbackVolver : (() -> Void)?
+    
+    
+    
+    
+    //var capturaEncuesta = CapturaEncuesta(marca: nil, color: nil, tipo: nil, year: nil, nombre: "", apellido: "", direccion: "", codigo_postal: nil, correo_electronico: "", celular: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +63,27 @@ class SegundoViewController : UIViewController {
     func volverAlPrimero(){
         self.dismiss(animated: true, completion: nil)
     }
+    
+    
+    @IBAction func doTapSiguiente(_ sender: Any) {
+        
+        self.marcaDato = marcaCarro.text!
+        self.colorDato = colorCarro.text!
+        self.tipoDato = tipoCarro.text!
+        self.yearDato = yearCarro.text!
+        //print(capturaEncuesta)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destino = segue.destination as! TercerViewController
+        destino.marcaFinal = self.marcaDato
+        destino.colorFinal = self.colorDato
+        destino.tipoFinal = self.tipoDato
+        destino.yearFinal = self.yearDato
+        destino.callbackVolver = volverAlPrimero
+    }
+    
+    
 }
 
 

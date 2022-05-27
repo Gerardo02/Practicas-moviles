@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5220D54B28408964003689FA /* CapturaEncuesta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5220D54A28408964003689FA /* CapturaEncuesta.swift */; };
+		5220D54D2840901B003689FA /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5220D54C2840901B003689FA /* Global.swift */; };
 		52665133282E1BC200075493 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52665132282E1BC200075493 /* AppDelegate.swift */; };
 		52665135282E1BC200075493 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52665134282E1BC200075493 /* SceneDelegate.swift */; };
 		52665137282E1BC200075493 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52665136282E1BC200075493 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5220D54A28408964003689FA /* CapturaEncuesta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturaEncuesta.swift; sourceTree = "<group>"; };
+		5220D54C2840901B003689FA /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		5266512F282E1BC200075493 /* FinalMoviles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalMoviles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52665132282E1BC200075493 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52665134282E1BC200075493 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				52665146282E24AF00075493 /* GifToImage.swift */,
 				5266514C282E33D700075493 /* SegundoViewController.swift */,
 				5266514E282E3E7000075493 /* TercerViewController.swift */,
+				5220D54A28408964003689FA /* CapturaEncuesta.swift */,
+				5220D54C2840901B003689FA /* Global.swift */,
 			);
 			path = FinalMoviles;
 			sourceTree = "<group>";
@@ -151,11 +157,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5220D54D2840901B003689FA /* Global.swift in Sources */,
 				52665137282E1BC200075493 /* ViewController.swift in Sources */,
 				52665133282E1BC200075493 /* AppDelegate.swift in Sources */,
 				52665135282E1BC200075493 /* SceneDelegate.swift in Sources */,
 				52665147282E24AF00075493 /* GifToImage.swift in Sources */,
 				5266514D282E33D700075493 /* SegundoViewController.swift in Sources */,
+				5220D54B28408964003689FA /* CapturaEncuesta.swift in Sources */,
 				5266514F282E3E7000075493 /* TercerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

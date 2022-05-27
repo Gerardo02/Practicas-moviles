@@ -20,5 +20,6 @@ struct CapturaEncuesta : Codable {
     var correo_electronico : String?
     var celular : String?
     var pais : String?
+    var estado : String?
     
 }

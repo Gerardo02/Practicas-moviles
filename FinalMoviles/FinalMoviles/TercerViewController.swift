@@ -27,7 +27,7 @@ class TercerViewController : UIViewController {
     var tipoFinal = ""
     var yearFinal = ""
     
-    var capturaEncuesta = CapturaEncuesta(marca: nil, color: nil, tipo: nil, year: nil, nombre: "", apellido: "", direccion: "", codigo_postal: nil, correo_electronico: "", celular: nil, pais: nil)
+    var capturaEncuesta = CapturaEncuesta(marca: nil, color: nil, tipo: nil, year: nil, nombre: "", apellido: "", direccion: "", codigo_postal: nil, correo_electronico: "", celular: nil, pais: nil, estado: nil)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,11 +47,12 @@ class TercerViewController : UIViewController {
         capturaEncuesta.codigo_postal = CPTextField.text!
         capturaEncuesta.correo_electronico = emailTextField.text!
         capturaEncuesta.celular = celularTextField.text!
+        capturaEncuesta.estado = estadoTextField.text!
         print(capturaEncuesta)
         
         do {
             
-            let url = URL(string: "http://192.168.68.64:8000/api/capturas")!
+            let url = URL(string: "http://172.31.192.220:8000/api/capturas")!
             var solicitud = URLRequest(url: url)
             solicitud.httpMethod = "POST"
             solicitud.allHTTPHeaderFields = [
